@@ -15,11 +15,11 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.require_paths = ["lib"]
+  gem.require_paths = ['lib']
 
   # Dependencies
-  gem.required_ruby_version = '>= 1.9.2'
-  gem.add_runtime_dependency 'pry', '>= 0.9.10'
-  gem.add_runtime_dependency 'debugger', '~> 1.3'
+  gem.required_ruby_version = '>= 2.1.2'
+  gem.add_runtime_dependency 'pry', '>= 0.10.0'
+  gem.add_runtime_dependency 'debugger', '~> 1.6.8'
   gem.add_development_dependency 'pry-remote', '~> 0.1.6'
 end
